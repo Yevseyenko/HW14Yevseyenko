@@ -1,6 +1,7 @@
 package com.epam.model;
 
 public class Tariff {
+
     public String name;
     public String operatorName;
     public double priceSMS;
@@ -16,6 +17,7 @@ public class Tariff {
         this.callprices=callprices;
         this.parameters=parameters;
     }
+
 
     public String getName() {
         return name;
@@ -56,4 +58,14 @@ public class Tariff {
     public Parameters getParameters() {
         return parameters;
     }
-}
+    @Override
+    public String toString() {
+        return "Tariff{" +
+                "name='" + name + '\'' +
+                ", operatorName=" + operatorName +
+                ", payroll='" + payroll+ '\'' +
+                ", priceSMS='" + priceSMS+ '\'' +
+             //   ", callprices=" + callprices.toString() +
+//                ",  parameters=" + parameters.toString() +
+                '}';
+}}

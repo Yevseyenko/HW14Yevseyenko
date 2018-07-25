@@ -1,9 +1,6 @@
 package com.epam.validator;
 
-import com.epam.parsers.TarifDomParcer;
-import org.apache.log4j.FileAppender;
 import org.apache.log4j.Logger;
-import org.apache.log4j.SimpleLayout;
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
