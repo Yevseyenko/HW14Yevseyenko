@@ -50,7 +50,7 @@ public class MyHandler extends DefaultHandler {
         } else if (qName.equalsIgnoreCase("OUTSIDECALLPRICE")) {
             boutsidecallprice = true;
         } else if (qName.equalsIgnoreCase("STATIONARYCALLPRICE")) {
-            boutsidecallprice = true;
+            bstationarycallprice = true;
         } else if (qName.equalsIgnoreCase("HADFAVOURITENUMBER")) {
             bhadfavouritenumber = true;
         } else if (qName.equalsIgnoreCase("TARIFFICATION")) {
