@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tariff>
+    <mobile_tariff>
+        <name>Unlimited talking</name>
+        <operatorName>Kyivstar</operatorName>
+        <payroll>55</payroll>
+        <callprices>
+            <insideCallPrice>0</insideCallPrice>
+            <outsideCallPrice>0.3</outsideCallPrice>
+            <stationaryCallPrice>0.8</stationaryCallPrice>
+        </callprices>
+        <priceSMS>0.1</priceSMS>
+        <parameters>
+            <hadFavouriteNumber>true</hadFavouriteNumber>
+            <tariffication>15seconds</tariffication>
+            <connectionPrice>25</connectionPrice>
+        </parameters>
+    </mobile_tariff>
+    <mobile_tariff>
+        <name>Unlim3G</name>
+        <operatorName>vodafone</operatorName>
+        <payroll>65</payroll>
+        <callprices>
+            <insideCallPrice>0.2</insideCallPrice>
+            <outsideCallPrice>0.2</outsideCallPrice>
+            <stationaryCallPrice>1</stationaryCallPrice>
+        </callprices>
+        <priceSMS>0.15</priceSMS>
+        <parameters>
+            <hadFavouriteNumber>true</hadFavouriteNumber>
+            <tariffication>EveryMinute</tariffication>
+            <connectionPrice>25</connectionPrice>
+        </parameters>
+    </mobile_tariff>
+    <mobile_tariff>
+        <name>Lifehack</name>
+        <operatorName>Life</operatorName>
+        <payroll>75</payroll>
+        <callprices>
+            <insideCallPrice>0</insideCallPrice>
+            <outsideCallPrice>0.35</outsideCallPrice>
+            <stationaryCallPrice>0.5</stationaryCallPrice>
+        </callprices>
+        <priceSMS>0.2</priceSMS>
+        <parameters>
+            <hadFavouriteNumber>false</hadFavouriteNumber>
+            <tariffication>EveryMinute</tariffication>
+            <connectionPrice>25</connectionPrice>
+        </parameters>
+    </mobile_tariff>
+</Tariff>

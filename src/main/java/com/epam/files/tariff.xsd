@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             elementFormDefault="qualified">
+    <xsd:element name="Tariff">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="mobile_tariff" type="mobile_tariff" minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="mobile_tariff">
+        <xsd:sequence>
+            <xsd:element name="name" type="name" />
+            <xsd:element name="operatorName" type="operatorName" />
+            <xsd:element name="payroll" type="xsd:double" />
+            <xsd:element name="priceSMS" type="xsd:double" />
+            <xsd:element name="callprices" type="callprices" />
+            <xsd:element name="parameters" type="parameters" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="name">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[a-zA-Z]+"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="operatorName">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[a-zA-Z]+"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="callprices">
+        <xsd:sequence>
+            <xsd:element name="insideCallPrice" type="xsd:double"/>
+            <xsd:element name="outsideCallPrice" type="xsd:double"/>
+            <xsd:element name="stationaryCallPrice" type="xsd:double"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="parameters">
+        <xsd:sequence>
+            <xsd:element name="hadFavouriteNumber" type="xsd:boolean"/>
+            <xsd:element name="tariffication" type="tariffication"/>
+            <xsd:element name="connectionPrice" type="xsd:double"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="tariffication">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="15seconds"/>
+            <xsd:enumeration value="EveryMinute"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+</xsd:schema>
